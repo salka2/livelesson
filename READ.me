@@ -1,3 +1,4 @@
+
 'git init': initialize current folder
 'git clone <URL>': brings the git repo from <URL> to current folder
 'git status' : tells us what we need to know about our repository
@@ -13,3 +14,12 @@
 - git diff --staged': run git diff between the staging area and last known state
 'git diff HEAD~<NUMBER>' compares HEAD with the commit <NUMBER> ago (relative)
 'git diff <HASH>' : compares HEAD with the commit <HASH>
+
+
+'git restore --source <HASH or HEAD~> <FILE>' : restore file to <HASH or HEAD~>
+    or (in older version)
+- 'git checkout <HASH or HEAD~> <FILE>': retires the file to <HASH or HEAD~>
+   - 'git checkout <HASH or HEAD~>': if you forget file, you end up in detached state
+   - 'git checkout main' : to go back to main from detached state
+	or
+   - 'git switch main': go back to main from detached state
